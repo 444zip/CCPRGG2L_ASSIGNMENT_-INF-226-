@@ -10,7 +10,7 @@ public class App {
         System.out.print("Enter student Email: ");
         String studentEmail = scan.nextLine();
 
-        Pattern pattern = Pattern.compile("\\+(@students.national-u.edu.ph)");
+        Pattern pattern = Pattern.compile("\\w+(@students.national-u.edu.ph)");
         Matcher matcher = pattern.matcher(studentEmail);
 
         boolean match = matcher.matches();
